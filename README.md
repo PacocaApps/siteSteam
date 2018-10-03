@@ -1,0 +1,7 @@
+# siteSteam
+Puro Comunismo aqui nada funciona
+BOLSOMITO 2018
+MATAR ESQUERDA
+COMUNISMO NAO FUNCIONA
+
+17 17 17 17 17 17 17 17 17 17 17 
