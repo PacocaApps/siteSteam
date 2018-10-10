@@ -1,14 +1,14 @@
 var canvas;
 var stars = [];
 function setup(){
-         canvas = createCanvas(windowWidth,windowHeight)
+         canvas = createCanvas(windowWidth,10*windowHeight)
  
  canvas.position(0,0);
     canvas.style('z-index','-1')
     
     
     
-    for(var i = 0; i < 100;i++){
+    for(var i = 0; i < 1000;i++){
         stars[i] = new Star(10);
         
     }
@@ -17,7 +17,8 @@ function setup(){
     function draw(){
 
         background(0);
-        for(var i = 0; i < 100;i++){
+        // canvas.position(0,mouseY);
+        for(var i = 0; i < stars.length;i++){
         stars[i].display();
             if(stars[i].x > width){
                 stars.slice(i,1);
@@ -49,4 +50,8 @@ class Star{
         
     }
     
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
